@@ -1,0 +1,29 @@
+﻿<Window x:Class="PrevodSoustav_IT3A.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrevodSoustav_IT3A"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"/>
+            <RowDefinition/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition/>
+            <RowDefinition Height="50px"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50px"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50px"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="txtVstup" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" BorderBrush="Black" FontSize="48" TextAlignment="Right"/>
+        <TextBox Name="txtVystup" IsReadOnly="True" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="" BorderBrush="Black" FontSize="48" TextAlignment="Right" />
+        <Button Name="btnPrevod" Grid.Column="1" Content="Převeď" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="48px" Click="btnPrevod_Click" />
+
+    </Grid>
+</Window>
